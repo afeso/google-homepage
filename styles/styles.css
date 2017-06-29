@@ -1,7 +1,21 @@
+/* remove browser default css */
+
 *{
 	margin: 0px;
 	padding: 0px;
 }
+
+/* suppossed to put the body in a contaner that is the size of
+the current screen size. i still seem to be missing something though.
+probably should use percentages for the contents and not pixels*/
+
+body {
+	height: 100%;
+	width: 100%;
+	font-family: lato,"times new roman";
+}
+
+/* Style the image to a smaller size */
 
 img {
 	height: 92px;
@@ -11,6 +25,9 @@ img {
 
 }
 
+/* General Styling for all unlimetedlinks on the page.
+they're going to be holding links */
+
 ul {
 	list-style-type: none;
 	overflow: hidden;
@@ -18,9 +35,14 @@ ul {
 	color:#0d0e0e;
 }
 
+
+/* float all lists right. 
+this currently only affects the navigation list */
 li {
 	float: right;
 }
+
+/* Styling for lists that are links */
 
 li a{
 	display: block;
@@ -34,9 +56,13 @@ li a:hover {
 	text-decoration: underline;
 }
 
-
+/* Styling for the navigation bar container  */
 .nav_bar {
-	
+	margin-top: 15px;
+	width: 90%;
+	height:10%;
+	float: right;
+	margin-right: 77px;
 }
 
 .form1{
@@ -44,6 +70,24 @@ li a:hover {
 
 }
 
+/* This is for making the sign in button look unique
+compared to its neighbours*/
+
+.s_button{
+	background: #4285f4;
+	border-radius: 5px;
+	font-weight: bold
+	border: 1px solid #4285f4
+	border-bottom-width: 3px;
+    border-right-width: 3px;
+    border-top-width: 3px;
+    padding-left: 10px;
+    padding-bottom: 9px;
+    padding-top: 9px;
+    margin-top: 6px;
+	color: #fff;
+	border-radius: 5px;
+}
 
 input[type=text]{
 	border: 2px solid #d4c9c9;
@@ -56,6 +100,8 @@ input[type=text]{
 	color: black;
 }
 
+
+/* Styling for the search box */
 input[type=submit]{
 	margin-top:10px;
 	padding: 16px 3px;
@@ -66,7 +112,8 @@ input[type=submit]{
 	border-radius: 2px;
 	font-size:inherit;
 	color:#544545;
-	border:aqua
+	border-radius: 6px;
+	border:aqua;
 }
 
 input[type=submit]:hover{
@@ -75,7 +122,26 @@ input[type=submit]:hover{
 }
 
 
+/* position the footer at the end of the page */
+.footer{
+	height: 50px;
+	background: #eee;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
 
+
+.foot_l{
+	float: left;
+	background: #eee;
+}
+
+.foot_r{
+	float: right;
+	background: #eee;
+}
 
 /* ul, .nav_bar {
 	list-style-type: none;
